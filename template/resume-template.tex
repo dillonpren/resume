@@ -1,0 +1,157 @@
+%-------------------------
+% Public Resume Template (Dummy Data)
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+% \raggedbottom
+\flushbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}  % {left}{before}{after}
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{%
+  \vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \small\textbf{#1} & \textit{#2} \\
+  \end{tabular*}\vspace{-6pt}%
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand{\resumeRoleWithDate}[2]{
+  \item\small{
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{#2} \\
+    \end{tabular*}
+    \vspace{-18pt}
+  }
+}
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=3pt, topsep=3pt}  % subtle breathing with tighter page fit
+\linespread{1.02}                            % slight increase while preserving fit
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  {\LARGE\textbf{Jane Doe}} \\
+  \href{mailto:jane.doe@example.com}{jane.doe@example.com} \textbullet
+  \href{tel:+10000000000}{(000) 000-0000} \textbullet
+  \href{https://linkedin.com/in/janedoe}{linkedin.com/in/janedoe} \textbullet
+  \href{https://github.com/janedoe}{github.com/janedoe} \\
+  \small Based in City, Country \quad \textbullet \quad Open to Remote
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Acme Corp}{Remote}{Software Engineer}{Jan 2023 -- Present}
+  \begin{itemize}
+    \resumeItem{Built and maintained backend services in Python and FastAPI.}
+    \resumeItem{Improved CI/CD pipelines and observability with containerized workflows.}
+  \end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading{\textbf{Sample Project}}{\textit{2024}}
+  \begin{itemize}
+    \resumeItem{Implemented a data processing pipeline with clear, reproducible steps.}
+  \end{itemize}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading{Example University}{City, Country}{B.S. in Computer Science}{2019 -- 2023}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Programming \& Scripting}{: Python, JavaScript, TypeScript, SQL, Bash, LaTeX} \\
+    \textbf{Frameworks \& Libraries}{: FastAPI, Django, React, SQLAlchemy, Pandas} \\
+    \textbf{Cloud, Databases \& Tools}{: AWS, Docker, GitHub Actions, SQLite, Git} \\
+    \textbf{Specialties}{: Automation, APIs, Data Pipelines}
+  }}
+\end{itemize}
+
+\end{document}
+
